@@ -8,9 +8,21 @@
   min-height: 100vh;
   width: 100vw;
   background: #242424;
-  background: radial-gradient(circle farthest-corner at center center, #242424 0%, #0f0f0f 80%);
-  background: -webkit-radial-gradient(circle farthest-corner at center center, #242424 0%, #0f0f0f 80%);
-  background: -moz-radial-gradient(circle farthest-corner at center center, #242424 0%, #0f0f0f 80%);
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #242424 0%,
+    #0f0f0f 80%
+  );
+  background: -webkit-radial-gradient(
+    circle farthest-corner at center center,
+    #242424 0%,
+    #0f0f0f 80%
+  );
+  background: -moz-radial-gradient(
+    circle farthest-corner at center center,
+    #242424 0%,
+    #0f0f0f 80%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,25 +41,16 @@
 .continent {
   position: absolute;
   cursor: pointer;
-
 }
-
-
 
 #america-svg-div {
   top: 7%;
   left: 2%;
 }
 
-
-
-
-
-
 #australia-svg-div {
   bottom: 10%;
   right: 7%;
-
 }
 
 #asia-svg-div {
@@ -55,15 +58,10 @@
   right: 5%;
 }
 
-
 #europe-svg-div {
   top: 15%;
   right: 42%;
 }
-
-
-
-
 
 @keyframes float {
   0% {
@@ -83,36 +81,32 @@
 }
 
 .continent-animation:hover {
-
   opacity: 1;
 }
 
 .continent-animation {
- 
   opacity: 0.6;
   transition: 0.5s ease-in-out;
 }
 
 #africa-svg {
-  fill: radial-gradient(49.81% 49.81% at 49.88% 50.19%, rgba(210, 209, 209, 0.37) 0%, rgba(201, 201, 201, 0) 100%);
-
+  fill: rgba(240, 240, 240, 0.52);
 }
 
 #europe-svg {
-  fill: lightblue;
+  fill: rgba(255, 255, 255, 0.21);
 }
 
-
-#america-svg{
-  fill:rgb(255, 6, 6);
+#america-svg {
+  fill: rgba(214, 208, 208, 0.45);
 }
 
-#australia-svg{
-  fill:rgb(153, 153, 153);
+#australia-svg {
+  fill: rgba(135, 135, 135, 1);
 }
 
 #asia-svg {
-  fill: coral;
+  fill: rgba(255, 255, 255, 0.62);
 }
 
 #africa-svg-div {

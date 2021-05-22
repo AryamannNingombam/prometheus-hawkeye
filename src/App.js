@@ -5,6 +5,7 @@ import {Europe} from './continents/Europe';
 import {America} from './continents/America';
 import {Africa} from './continents/Africa';
 import './App.css';
+import { Countdown } from './countdown/Countdown';
 
 
 
@@ -19,9 +20,13 @@ function App() {
          <America/>
           <Africa/>
             </div>
-            <div className="countdown">
-                120312093102312
+            <span id="hawkeye-main-logo">HAWKEYE</span>
+            <div id="hawkeye-countdown-div">
+            <span id="hawkeye-main-subheading">THE HAWK LANDS IN</span>
+            <Countdown/>
             </div>
+            
+       
         </div>
      
   );

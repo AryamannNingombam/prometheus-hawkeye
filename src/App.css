@@ -2,17 +2,21 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
+  font-family: "Tigerious";
 }
 
 .maincontainer {
   min-height: 100vh;
   width: 100vw;
+  z-index:1;
   background: #242424;
   background: radial-gradient(circle farthest-corner at center center, #242424 0%, #0f0f0f 80%);
   background: -webkit-radial-gradient(circle farthest-corner at center center, #242424 0%, #0f0f0f 80%);
   background: -moz-radial-gradient(circle farthest-corner at center center, #242424 0%, #0f0f0f 80%);
   display: flex;
-  justify-content: center;
+  flex-direction:column;
+  /* justify-content: center; */
+  
   align-items: center;
 }
 
@@ -21,15 +25,12 @@
   min-height: 100vh;
   width: 100vw;
 }
-
-.countdown {
-  background-color: brown;
-}
+ 
 
 .continent {
   position: absolute;
   cursor: pointer;
-
+ 
 }
 
 
@@ -53,6 +54,7 @@
 #asia-svg-div {
   bottom: 23%;
   right: 5%;
+  z-index:10;
 }
 
 
@@ -89,7 +91,7 @@
 
 .continent-animation {
  
-  opacity: 0.6;
+  opacity: 0.5;
   transition: 0.5s ease-in-out;
 }
 
@@ -113,9 +115,35 @@
 
 #asia-svg {
   fill: coral;
+  
 }
 
 #africa-svg-div {
   bottom: 12%;
   right: 37%;
+}
+
+#hawkeye-main-logo{
+  margin:2rem 0;
+  flex:1;
+  font-size:6.6rem;
+  color:rgb(128,149,159)
+}
+ 
+
+#hawkeye-main-subheading{
+  font-size:2.8rem;
+  color:rgb(128,149,159);
+  margin:3rem 0;   
+  z-index:100;
+}
+
+#hawkeye-countdown-div{
+  display:flex;
+  justify-content:start;
+  align-items:center;
+  flex-direction:column;
+  /* border:2px solid white; */
+  padding:4rem 0;
+  flex:3;
 }

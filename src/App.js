@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+
+import {Asia} from './continents/Asia';
+import {Australia} from './continents/Australia';
+import {Europe} from './continents/Europe';
+import {America} from './continents/America';
+import {Africa} from './continents/Africa';
 import './App.css';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+        <div className="maincontainer">
+            <div className="continents">
+           <Asia/>
+           <Australia/>
+           <Europe/>
+         <America/>
+          <Africa/>
+            </div>
+            <div className="countdown">
+                120312093102312
+            </div>
+        </div>
+     
   );
 }
 

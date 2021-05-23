@@ -43,10 +43,15 @@
   cursor: pointer;
 }
 
-
- 
-
-
+.confirm_btn {
+  width: 50%;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  font-family: "Quicksand";
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
 
 #america-svg-div {
   top: 7%;
@@ -74,15 +79,12 @@
   right: 37%;
 }
 
-
-
 #hawkeye-main-logo {
   margin: 2rem 0;
   flex: 1;
   font-size: 6.6rem;
   color: rgb(128, 149, 159);
 }
-
 
 #hawkeye-main-subheading {
   font-size: 2.8rem;
@@ -101,39 +103,32 @@
   flex: 3;
 }
 
- 
-
-
-.continent-animation-colors{
-  opacity:0.2;
-  transition:0.3s ease-in-out;
-  fill:rgb(136, 136, 136);
+.continent-animation-colors {
+  opacity: 0.2;
+  transition: 0.3s ease-in-out;
+  fill: rgb(136, 136, 136);
 }
 
-.continent:hover  > .continent-animation,
-.continent:hover  > .continent-animation > .continent-animation-colors{
-opacity:1;
-animation:float 1.2s ease-in-out infinite;
+.continent:hover > .continent-animation,
+.continent:hover > .continent-animation > .continent-animation-colors {
+  opacity: 1;
+  animation: float 1.2s ease-in-out infinite;
 }
 
-
-
- 
 @keyframes float {
   0% {
-    filter:drop-shadow(2px 2px 5px rgba(255,255,255,0.5));
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
 
     transform: translatey(0px);
   }
 
   50% {
-    filter:drop-shadow(4px 4px 5px rgba(255,255,255,0.5));
+    filter: drop-shadow(4px 4px 5px rgba(255, 255, 255, 0.5));
     transform: translatey(-5px);
- 
   }
 
   100% {
-    filter:drop-shadow(2px 2px 5px rgba(255,255,255,0.5));
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
     transform: translatey(0px);
   }
 }

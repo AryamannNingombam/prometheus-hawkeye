@@ -8,8 +8,7 @@ import "./App.css";
 
 // ES6 Modules or TypeScript
 import Swal from "sweetalert2";
-
-// import "sweetalert2/src/sweetalert2.scss";
+// import Swal from "sweetalert2/src/sweetalert2.js";
 
 function App() {
   const onContinentClick = () => {
@@ -21,6 +20,12 @@ function App() {
       imageWidth: 400,
       imageHeight: 300,
       imageAlt: "Custom image",
+      background: "#242424",
+      confirmButtonColor: "white",
+      buttonsStyling: false,
+      customClass: {
+        confirmButton: "confirm_btn",
+      },
     });
   };
 
